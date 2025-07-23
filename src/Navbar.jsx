@@ -1,8 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import { FaLinkedin, FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin, FaWhatsapp, FaFacebook } from 'react-icons/fa';
 
 function Navbar() {
+  const [activeSection, setActiveSection] = useState('home');
+
+  const navItems = [
+    { name: 'Home', to: '#home' },
+    { name: 'About', to: '#about' },
+    { name: 'Skills', to: '#skills' },
+    { name: 'Projects', to: '#projects' },
+    { name: 'Contact', to: '#contact' },
+  ];
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section[id]');
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px 0px -30% 0px',
+        threshold: 0.3,
+      }
+    );
+
+    sections.forEach(section => observer.observe(section));
+    return () => sections.forEach(section => observer.unobserve(section));
+  }, []);
+
   return (
     <nav className="fixed w-full z-50 bg-black/70 backdrop-blur-lg py-3 px-6 border-b border-zinc-700">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -34,23 +66,22 @@ function Navbar() {
           </a>
         </div>
 
-        
         <ul className="flex gap-6 text-white text-sm sm:text-base font-medium">
-          <HashLink smooth to="#" className="hover:text-yellow-400 transition">
-            Home
-          </HashLink>
-          <HashLink smooth to="#about" className="hover:text-yellow-400 transition">
-            About
-          </HashLink>
-          <HashLink smooth to="#skills" className="hover:text-yellow-400 transition">
-            Skills
-          </HashLink>
-          <HashLink smooth to="#projects" className="hover:text-yellow-400 transition">
-            Projects
-          </HashLink>
-          <HashLink smooth to="#contact" className="hover:text-yellow-400 transition">
-            Contact
-          </HashLink>
+          {navItems.map(({ name, to }) => {
+            const sectionId = to.replace('#', '');
+            return (
+              <HashLink
+                key={to}
+                smooth
+                to={to}
+                className={`transition hover:text-yellow-400 ${
+                  activeSection === sectionId ? 'text-yellow-400' : ''
+                }`}
+              >
+                {name}
+              </HashLink>
+            );
+          })}
         </ul>
       </div>
     </nav>
