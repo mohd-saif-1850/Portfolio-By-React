@@ -29,16 +29,17 @@ function WorkTogether() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#contactform"
+          target='_blank'
+            href="https://wa.me/8218532681"
             className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 hover:scale-105 transition"
           >
             <FaPaperPlane /> Send Message
           </a>
           <a
-            href="/resume.pdf" // Replace with your resume link
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#1f1f1f] border border-gray-600 text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 hover:scale-105 transition"
+            className="bg-[#1f1f1f] border border-gray-600 cursor-not-allowed text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 hover:scale-105 transition"
           >
             <FaDownload /> Download Resume
           </a>

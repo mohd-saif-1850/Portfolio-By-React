@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaPython, FaDatabase, FaGitAlt } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTailwindcss } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiTailwindcss,SiCplusplus } from 'react-icons/si';
 import { MdNavigateBefore, MdNavigateNext } from 'react-icons/md';
 
 const allSkills = [
   { name: 'HTML5', icon: <FaHtml5 className="text-[#e34f26]" />, level: 95 },
-  { name: 'CSS3', icon: <FaCss3Alt className="text-[#1572B6]" />, level: 90 },
-  { name: 'JavaScript', icon: <FaJsSquare className="text-[#f7df1e]" />, level: 92 },
-  { name: 'React', icon: <FaReact className="text-[#61dafb]" />, level: 90 },
+  { name: 'CSS3', icon: <FaCss3Alt className="text-[#1572B6]" />, level: 60 },
+  { name: 'JavaScript', icon: <FaJsSquare className="text-[#f7df1e]" />, level: 72 },
+  { name: 'React', icon: <FaReact className="text-[#61dafb]" />, level: 80 },
   { name: 'Node.js', icon: <FaNodeJs className="text-[#68a063]" />, level: 85 },
-  { name: 'Express.js', icon: <SiExpress className="text-white" />, level: 80 },
+  { name: 'Express.js', icon: <SiExpress className="text-white" />, level: 30 },
   { name: 'MongoDB', icon: <SiMongodb className="text-[#4DB33D]" />, level: 83 },
   { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-[#38bdf8]" />, level: 88 },
-  { name: 'Python', icon: <FaPython className="text-[#3776AB]" />, level: 75 },
   { name: 'Git', icon: <FaGitAlt className="text-[#f1502f]" />, level: 80 },
   { name: 'Database', icon: <FaDatabase className="text-[#f29111]" />, level: 78 },
+  { name: 'C++', icon: <SiCplusplus className="text-[#38bdf8]" />, level: 53 },
+  { name: 'Python', icon: <FaPython className="text-yellow-200" />, level: 53 },
 ];
 
 function Skills() {
@@ -63,14 +64,14 @@ function Skills() {
             <button
               onClick={() => setIndex((prev) => Math.max(prev - 4, 0))}
               disabled={index === 0}
-              className={`p-2 rounded-full border ${index === 0 ? 'border-gray-600 text-gray-500 cursor-not-allowed' : 'border-gray-400 text-white hover:bg-gray-800'}`}
+              className={`p-2 rounded-full border ${index === 0 ? 'border-gray-600 text-gray-500 cursor-not-allowed' : 'border-gray-400  cursor-pointer text-white hover:bg-gray-800'}`}
             >
               <MdNavigateBefore size={24} />
             </button>
             <button
               onClick={() => setIndex((prev) => (index + 4 < allSkills.length ? prev + 4 : prev))}
               disabled={index + 4 >= allSkills.length}
-              className={`p-2 rounded-full border ${index + 4 >= allSkills.length ? 'border-gray-600 text-gray-500 cursor-not-allowed' : 'border-gray-400 text-white hover:bg-gray-800'}`}
+              className={`p-2 rounded-full border ${index + 4 >= allSkills.length ? 'border-gray-600 text-gray-500 cursor-not-allowed' : 'border-gray-400 text-white  cursor-pointer hover:bg-gray-800'}`}
             >
               <MdNavigateNext size={24} />
             </button>

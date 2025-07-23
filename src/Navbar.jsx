@@ -25,14 +25,6 @@ function Navbar() {
             <FaWhatsapp size={20} />
           </a>
           <a
-            href="https://www.instagram.com/mohd_saif_1850"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-pink-500 transition"
-          >
-            <FaInstagram size={20} />
-          </a>
-          <a
             href="https://www.facebook.com/share/1btZkKMBCm/"
             target="_blank"
             rel="noopener noreferrer"

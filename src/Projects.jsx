@@ -25,32 +25,32 @@ const techIcons = {
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    description: 'Modern responsive developer portfolio using React & Tailwind.',
+    title: 'Not Form',
+    description: 'A full-stack website featuring user authentication and real-time content upload functionality, ensuring secure access and instant data synchronization.',
     tech: ['react', 'tailwind', 'js'],
-    code: 'https://github.com/yourusername/portfolio',
-    demo: 'https://yourportfolio.com',
+    code: 'https://github.com/mohd-saif-1850/Mega-Project',
+    demo: 'https://not-form.vercel.app/',
   },
   {
-    title: 'Blog Platform',
-    description: 'Full-stack blog app with authentication and CMS features.',
-    tech: ['react', 'node', 'mongo', 'css'],
-    code: 'https://github.com/yourusername/blog-platform',
-    demo: 'https://yourportfolio.com',
+    title: 'Addictions Of Teenagers',
+    description: 'Highlighting the rising digital and behavioral addictions among teenagers, impacting their mental health, focus, and real-life social interactions.',
+    tech: ['react', 'tailwind','css', 'js'],
+    code: 'https://github.com/mohd-saif-1850/Addictions-Of-Teenagers',
+    demo: 'https://addictions-of-teenagers.vercel.app/',
   },
   {
-    title: 'E-Commerce Store',
-    description: 'Complete e-commerce site with cart, checkout, and payment gateway.',
-    tech: ['react', 'node', 'mongo', 'tailwind'],
-    code: 'https://github.com/yourusername/ecommerce-store',
-    demo: 'https://yourportfolio.com',
+    title: 'Music Player UI',
+    description: 'Developed a high-fidelity music player UI using modern frontend technologies, focusing on clean aesthetics and interactive audio controls.',
+    tech: ['html', , 'tailwind', 'css','js'],
+    code: 'https://github.com/mohd-saif-1850/Music-Player-UI',
+    demo: 'https://mohd-saif-1850.github.io/Music-Player-UI/',
   },
   {
-    title: 'Weather App',
-    description: 'Real-time weather forecast using external API and geo-location.',
-    tech: ['html', 'css', 'js'],
-    code: 'https://github.com/yourusername/weather-app',
-    demo: 'https://yourportfolio.com',
+    title: 'To Do List',
+    description: 'A full-featured To-Do app with intuitive design and complete task handling capabilities.',
+    tech: ['html', 'css', 'js',],
+    code: 'https://github.com/mohd-saif-1850/To-Do-List',
+    demo: 'https://mohd-saif-1850.github.io/To-Do-List/',
   },
 ];
 
@@ -101,7 +101,7 @@ function Projects() {
 
         <div className="mt-12 flex justify-center">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/mohd-saif-1850"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-gray-500 text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition"

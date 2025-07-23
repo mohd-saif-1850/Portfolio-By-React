@@ -29,7 +29,7 @@ function PortFolio() {
           <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
           </svg>Get In Touch</button>
           </a>
-        <a href="#" download><button className='border-1 flex flex-row border-blue-600 p-4 gap-2 text-s outline-none rounded-2xl cursor-pointer hover:bg-blue-600 transition-all duration-300 ease-in-out hover:scale-105'>
+        <a href="#" download><button className='border-1 flex flex-row border-blue-600 p-4 gap-2 text-s outline-none rounded-2xl cursor-not-allowed hover:bg-blue-600 transition-all duration-300 ease-in-out hover:scale-105' disabled>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
             <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
             <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
