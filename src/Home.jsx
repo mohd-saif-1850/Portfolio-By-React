@@ -15,7 +15,7 @@ function Home() {
         <h4 className=''>Just a Developer Who Loves Clean Code and Good UI</h4>
       </div>
       <div className='flex justify-center mt-4 gap-4'>
-        <a href="htpps://wa.me/8218532681"><button className='p-4 px-6 flex flex-row gap-2 text-s bg-orange-500 outline-none border-0 rounded-full cursor-pointer hover:bg-orange-600 transition-all duration-300 ease-in-out hover:scale-105'>
+        <a href="https://wa.me/8218532681"><button className='p-4 px-6 flex flex-row gap-2 text-s bg-orange-500 outline-none border-0 rounded-full cursor-pointer hover:bg-orange-600 transition-all duration-300 ease-in-out hover:scale-105'>
           <svg className='mt-1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
           <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
           </svg>Get In Touch</button>
